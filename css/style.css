@@ -1,8 +1,12 @@
-body {
+html {
     font-family: "Roboto", sans-serif;
     color: #222;
     line-height: 1.4;
     font-size: 110%;
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
 }
 
@@ -59,14 +63,14 @@ nav a:link {
 nav a:link, ul a:visited {
     background-color: purple;
     color: white;
-    border: solid 8px;
+    border: 2px solid 8px;
     text-decoration: none; 
 }
 
 nav a:hover, ul a:focus {
     background-color: white;
     color: purple;
-    border: solid purple 2px;
+    border: 2px solid purple;
 }
 
 .hero {
@@ -111,14 +115,14 @@ figcaption {
 }
 
 .icon {
-    display: block;
+    display: inline-block;
     padding-top: 2em;
     padding-right: 0;
     padding-left: 2em;
     padding-left: 0;
 }
 
-.icon>img {
+.icon img {
     width: 260px;
     float: left;
     margin-right: 2em;
@@ -135,8 +139,11 @@ figcaption {
 footer {
     background-color: black;
     color: white;
+}
+
+footer .wrapper {
     text-align: center;
-    padding-top: 8px;
+    padding: 8px;
     padding-right: 0;
     padding-bottom: 8px;
     padding-left: 0;
